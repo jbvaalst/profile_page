@@ -1,0 +1,1231 @@
+* {
+  border: 0;
+  font-family: Lato, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: background-color .5s linear;
+  -moz-transition: background-color .5s linear;
+  -o-transition: background-color .5s linear;
+  transition: background-color .5s linear
+}
+html,
+body {
+  overflow: hidden
+}
+body {
+  background: rgba(0, 0, 0, 1);
+}
+.right {
+  float: right
+}
+.workspace {
+  height: 700px;
+  left: 50%;
+  margin: -350px 0 0 -436px;
+  position: absolute;
+  top: 50%;
+  width: 872px;
+  -webkit-box-shadow: 0 6px 10px -4px #222;
+  -moz-box-shadow: 0 6px 10px -4px #222;
+  box-shadow: 0 6px 10px -4px #222
+}
+.workspace>.menu {
+  float: left;
+  height: 100%;
+  width: 70px
+}
+.workspace>.content {
+  float: right;
+  height: 100%;
+  width: 802px
+}
+.workspace>.content .pagearea {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 30px 0 15px 35px
+}
+.workspace>.content .pagearea>div.top {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 40px;
+  overflow: hidden;
+  padding-right: 20px;
+  width: 100%
+}
+.workspace>.content .pagearea>div.top>p {
+  float: left;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase
+}
+.workspace>.content .pagearea>div.top>div.socials {
+  float: right
+}
+.workspace>.content .pagearea>div.top>div.socials>div {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  cursor: pointer;
+  float: left;
+  height: 35px;
+  margin-left: 5px;
+  padding: 6px;
+  width: 35px
+}
+.workspace>.content .pagearea>div.top>div.socials>div>a>div.icon {
+  background: url(../images/social_sprite.png) no-repeat;
+  height: 20px;
+  width: 20px
+}
+.workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.twitter {
+  background-position: -26px 0
+}
+.workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.gplus {
+  background-position: -40px 0
+}
+.workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.dribbble {
+  background-position: -60px 0
+}
+.workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.rss {
+  background-position: -80px 0
+}
+.workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.vimeo {
+  background-position: -100px 0
+}
+.workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.flickr {
+  background-position: -120px 0
+}
+.workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.picasa {
+  background-position: -140px 0
+}
+.workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.deviantart {
+  background-position: -160px 0
+}
+.workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.github {
+  background-position: -180px 0;
+  background-size: cover
+}
+.workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.tumblr {
+  background-position: -200px 0
+}
+.workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.linkedin {
+  background-position: -220px 0;
+  background-size: cover
+}
+.workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.pinterest {
+  background-position: -240px 0
+}
+.workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.envato {
+  background-position: -260px 0
+}
+.workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.nineninedesign {
+  background-position: -280px 0
+}
+.workspace>.content .pagearea>div.bottom {
+  height: 610px;
+  overflow: hidden;
+  position: relative;
+  width: 100%
+}
+.workspace>.content .pagearea>div.bottom ul.filters {
+  list-style: none;
+  margin-bottom: 20px
+}
+.workspace>.content .pagearea>div.bottom ul.filters>li {
+  background: #999;
+  color: #FFF;
+  cursor: pointer;
+  display: inline;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 5px 10px;
+  text-transform: uppercase
+}
+.workspace>.content .pagearea>div.bottom ul.filters>li.active {
+  background: #636363
+}
+.workspace>.content .pagearea>div.bottom ul.gallery {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: auto;
+  list-style: none;
+  padding-right: 30px;
+  width: 100%
+}
+.workspace>.content .pagearea>div.bottom ul.gallery>li {
+  cursor: pointer;
+  display: inline;
+  width: 48%
+}
+.workspace>.content .pagearea>div.bottom ul.gallery>li.accent {
+  width: 98%;
+}
+.workspace>.content .pagearea>div.bottom ul.gallery>li.gallery-left {
+  padding-right: 4%
+}
+.workspace>.content .pagearea>div.bottom ul.gallery>li>a {
+  margin-bottom: 15px
+}
+.workspace>.content .pagearea>div.bottom ul.gallery>li>a>img {
+  height: 100%;
+  /* max-height: 161px; */
+  max-height: 300px;
+  width: 100%
+}
+.workspace>.content .pagearea.profile>div.bottom img.profileImage {
+  /* height: auto; */
+  height: 200px;
+  width: auto;
+}
+.workspace>.content .pagearea.profile>div.bottom p,
+.workspace>.content .pagearea.contact>div.bottom p {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: #000A24;
+  font-size: 15px;
+  line-height: 25px;
+  padding-right: 31px;
+  margin-bottom: 1em;
+}
+.workspace>.content .pagearea.profile>div.bottom table {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin-top: 20px;
+  padding-right: 31px
+}
+.workspace>.content .pagearea.profile>div.bottom table tr td {
+  color: #777;
+  font-size: 17px;
+  line-height: 35px
+}
+.workspace>.content .pagearea.profile>div.bottom table tr td.title {
+  font-weight: 700;
+  vertical-align: top;
+  width: 100px
+}
+.workspace>.content .pagearea.contact>div.bottom p.title {
+  font-weight: 700;
+  margin: 15px 0 5px;
+  vertical-align: top
+}
+.workspace>.content .pagearea.contact>div.bottom table {
+  margin-top: -10px
+}
+.workspace>.content .pagearea.contact>div.bottom table tr td input[type=text],
+.workspace>.content .pagearea.contact>div.bottom table tr td input[type=password],
+.workspace>.content .pagearea.contact>div.bottom table tr td textarea {
+  border-color: #888;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-weight: 700;
+  margin-top: 15px;
+  padding: 5px;
+  width: 331px
+}
+.workspace>.content .pagearea.contact>div.bottom table tr td input[type=text],
+.workspace>.content .pagearea.contact>div.bottom table tr td input[type=password] {
+  height: 30px
+}
+.workspace>.content .pagearea.contact>div.bottom table tr td textarea {
+  height: 100px;
+  resize: none
+}
+.workspace>.content .pagearea.contact>div.bottom table tr td div.submit {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 700;
+  height: 35px;
+  margin-top: 10px;
+  padding: 5px 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100px
+}
+.workspace>.content .pagearea.contact>div.bottom table tr td#mailerror {
+  padding-top: 14px
+}
+.workspace>.content .pagearea.resume>div.bottom ul li {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin-bottom: 15px;
+  width: 336px
+}
+.workspace>.content .pagearea.resume>div.bottom ul li div {
+  display: none
+}
+.workspace>.content .pagearea.resume>div.bottom ul li div ul li {
+  padding: 10px;
+  margin-bottom: 0
+}
+.workspace>.content .pagearea.resume>div.bottom ul li div ul li h1 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 3px
+}
+.workspace>.content .pagearea.resume>div.bottom ul li div ul li h2 {
+  color: #000;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 3px
+}
+.workspace>.content .pagearea.resume>div.bottom ul li div ul li p {
+  color: #000;
+  font-size: 14px
+}
+.workspace>.content .pagearea.resume>div.bottom ul li div table tr td {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 35px
+}
+.workspace>.content .pagearea.resume>div.bottom ul li div table tr td.skill {
+  color: #6C6C6C;
+  width: 120px
+}
+.workspace>.content .pagearea.resume>div.bottom ul li div table tr td.level {
+  width: 38px
+}
+.workspace>.content .pagearea.resume>div.bottom ul li div table tr td.skill-bar {
+  width: 170px
+}
+.workspace>.content .pagearea.resume>div.bottom ul li div table tr td.skill-bar>pre {
+  background-image: url(../images/progress.png);
+  height: 22px
+}
+.workspace>.content .pagearea.resume>div.bottom ul li h3 {
+  background-color: #999;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 4px 10px;
+  text-transform: uppercase;
+  width: 336px
+}
+.accordion-plus {
+  background-image: url(../images/plus.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  cursor: pointer
+}
+.accordion-minus {
+  background-image: url(../images/minus.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  cursor: pointer
+}
+#page-cover {
+  background: url(../images/cover_bg.jpg);
+  background-size: cover;
+  -moz-background-size: cover;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+#page-cover>div.socials {
+  position: absolute;
+  right: 20px;
+  top: 20px
+}
+#page-cover>div.socials>div {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  cursor: pointer;
+  float: left;
+  height: 35px;
+  margin-left: 5px;
+  padding: 6px;
+  width: 35px
+}
+#page-cover>div.socials>div>a>div.icon {
+  height: 23px;
+  width: 23px
+}
+#page-cover>div.socials>div>a>div.icon.twitter {
+  background-position: -23px 0
+}
+#page-cover>div.socials>div>a>div.icon.gplus {
+  background-position: -46px 0
+}
+#page-cover>div.socials>div>a>div.icon.dribbble {
+  background-position: -69px 0
+}
+#page-cover>div.socials>div>a>div.icon.rss {
+  background-position: -92px 0
+}
+#page-cover>div.socials>div>a>div.icon.vimeo {
+  background-position: -115px 0
+}
+#page-cover>div.socials>div>a>div.icon.flickr {
+  background-position: -138px 0
+}
+#page-cover>div.socials>div>a>div.icon.picasa {
+  background-position: -161px 0
+}
+#page-cover>div.socials>div>a>div.icon.deviantart {
+  background-position: -184px 0
+}
+#page-cover>div.socials>div>a>div.icon.github {
+  background-position: -207px 0
+}
+#page-cover>div.socials>div>a>div.icon.tumblr {
+  background-position: -230px 0
+}
+#page-cover>div.socials>div>a>div.icon.linkedin {
+  background-position: -253px 0
+}
+#page-cover>div.socials>div>a>div.icon.pinterest {
+  background-position: -276px 0
+}
+#page-cover>div.socials>div>a>div.icon.envato {
+  background-position: -299px 0
+}
+#page-cover>div.socials>div>a>div.icon.nineninedesign {
+  background-position: -322px 0
+}
+#page-cover>div.info {
+  bottom: 20px;
+  position: absolute;
+  right: 20px
+}
+#page-cover>div.info>p.name {
+  font-size: 80px
+}
+#page-cover>div.info>p.ocupation {
+  font-size: 50px;
+  text-align: right;
+  margin-top: -20px
+}
+#profile-cover>div.info,
+#resume-cover>div.info,
+#portfolio-cover>div.info,
+#contact-cover>div.info {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 50%
+}
+#profile-cover>div.info>p,
+#resume-cover>div.info>p,
+#portfolio-cover>div.info>p,
+#contact-cover>div.info>p {
+  font-weight: bolder;
+  padding: 27px;
+  text-shadow: 1px 1px #000
+}
+#profile-cover>div.info>p.name,
+#resume-cover>div.info>p.name,
+#portfolio-cover>div.info>p.name,
+#contact-cover>div.info>p.name {
+  font-size: 40px
+}
+#profile-cover>div.info>p.ocupation,
+#resume-cover>div.info>p.ocupation,
+#portfolio-cover>div.info>p.ocupation,
+#contact-cover>div.info>p.ocupation {
+  font-size: 20px;
+  text-align: left;
+  margin-top: -55px
+}
+#profile-cover {
+  background: url(../images/cover_profile.jpg);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+#portfolio-cover {
+  background: url(../images/cover_portfolio.jpg);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+#resume-cover {
+  background: url(../images/cover_resume.jpg);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+#contact-cover {
+  background: url(../images/cover_contact.jpg);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.menu>div>ul {
+  list-style-type: none;
+  padding: 22px;
+  width: 100%
+}
+.menu>div>ul>li {
+  height: 35px;
+  margin-bottom: 15px;
+  width: 25px
+}
+.menu-item {
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  height: 35px;
+  width: 25px
+}
+.menu-item-block {
+  height: 35px;
+  overflow: hidden;
+  width: 25px
+}
+.menu-item-block>.menu-item {
+  float: left
+}
+.menu-item-block>p {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  cursor: pointer;
+  opacity: 0;
+  float: left;
+  font-size: 0;
+  font-weight: 700;
+  margin-left: 50px;
+  padding-top: 5px;
+  text-transform: uppercase
+}
+.menu-item-block:hover>p {
+  font-size: 20px;
+  height: 35px;
+  opacity: 1;
+  -webkit-transition-delay: .3s;
+  -moz-transition-delay: .3s;
+  -o-transition-delay: .3s;
+  transition-delay: .3s
+}
+.menu-item-block:hover {
+  position: absolute;
+  z-index: 200;
+  -webkit-transition: width .3s ease-in-out;
+  -moz-transition: width .3s ease-in-out;
+  -o-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out
+}
+#home>div.menu-item {
+  background-position: 0 0
+}
+#profile>div.menu-item {
+  background-position: 0 -35px
+}
+#resume>div.menu-item {
+  background-position: 0 -70px
+}
+#portfolio>div.menu-item {
+  background-position: 0 -105px
+}
+#contact>div.menu-item {
+  background-position: 0 -140px
+}
+#home:hover {
+  width: 155px
+}
+#profile:hover {
+  width: 175px
+}
+#resume:hover {
+  width: 175px
+}
+#portfolio:hover {
+  width: 210px
+}
+#contact:hover {
+  width: 190px
+}
+@media only screen and (max-height: 760px),
+(max-width: 875px) {
+  .workspace {
+    height: 631px;
+    margin: -315px 0 0 -393px;
+    width: 785px
+  }
+  .workspace>.content {
+    width: 715px
+  }
+  .workspace>.content .pagearea.profile>div.bottom img.profileImage,
+  .workspace>.content .pagearea.resume>div.bottom ul li h3,
+  .workspace>.content .pagearea.resume>div.bottom ul li,
+  .workspace>.content .pagearea.contact>div.bottom iframe.map,
+  .workspace>.content .pagearea.contact>div.bottom table tr td input[type=text],
+  .workspace>.content .pagearea.contact>div.bottom table tr td input[type=password],
+  .workspace>.content .pagearea.contact>div.bottom table tr td textarea {
+    width: 292px
+  }
+  .workspace>.content .pagearea.profile>div.bottom p,
+  .workspace>.content .pagearea.contact>div.bottom p {
+    font-size: 13px
+  }
+  .workspace>.content .pagearea.profile>div.bottom table {
+    margin-top: 10px
+  }
+  .workspace>.content .pagearea>div.bottom {
+    height: 540px
+  }
+  #profile-cover>div.info>p.name,
+  #resume-cover>div.info>p.name,
+  #portfolio-cover>div.info>p.name,
+  #contact-cover>div.info>p.name {
+    font-size: 35px
+  }
+  .workspace>.content .pagearea>div.top>div.socials>div {
+    height: 25px;
+    width: 25px
+  }
+  .workspace>.content .pagearea>div.top>div.socials>div>a>div.icon {
+    background-size: cover;
+    height: 16px;
+    width: 16px
+  }
+  .workspace>.content .pagearea>div.bottom ul.gallery>li>a>img {
+    max-height: 140px
+  }
+  .workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.twitter {
+    background-position: -16px 0
+  }
+  .workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.linkedin {
+    background-position: -176px 0
+  }
+  .workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.github {
+    background-position: -144px 0
+  }
+  .workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.gplus {
+    background-position: -32px 0
+  }
+  .workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.dribbble {
+    background-position: -48px 0
+  }
+  .workspace>.content .pagearea>div.top {
+    padding-right: 26px
+  }
+  .workspace>.content .pagearea.resume>div.bottom ul li div table tr td {
+    font-size: 14px
+  }
+}
+@media only screen and (max-width: 786px),
+(max-height: 630px) {
+  html,
+  body {
+    height: 100%;
+    width: 100%
+  }
+  .workspace {
+    left: 0;
+    margin: 0 auto;
+    max-width: 428px;
+    height: 100%;
+    position: relative;
+    top: 0;
+    width: 100%
+  }
+  .workspace>.menu {
+    float: none;
+    height: 45px;
+    width: 100%
+  }
+  .workspace>.menu>div {
+    text-align: center;
+    width: 100%
+  }
+  .workspace>.menu>div>ul {
+    list-style-type: none;
+    padding: 5px 0;
+    width: 355px;
+    margin: 0 auto
+  }
+  .workspace>.menu>div>ul>li {
+    height: 20px;
+    margin-bottom: 0;
+    width: 25px;
+    float: left;
+    margin: 0 23px
+  }
+  .workspace>.content {
+    width: 100%
+  }
+  .workspace>.content .pagearea {
+    padding: 20px 25px
+  }
+  .workspace>.content .pagearea>div.bottom {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 100%;
+    padding-bottom: 85px!important
+  }
+  .workspace>.content .pagearea>div.top,
+  .workspace>.content .pagearea.profile>div.bottom p,
+  .workspace>.content .pagearea.contact>div.bottom p,
+  .workspace>.content .pagearea>div.bottom ul.gallery {
+    padding-right: 0
+  }
+  .workspace>.content .pagearea>div.bottom ul.gallery>li>a>img {
+    max-height: 181px
+  }
+  #home:hover {
+    width: 35px
+  }
+  #profile:hover {
+    width: 35px
+  }
+  #resume:hover {
+    width: 35px
+  }
+  #portfolio:hover {
+    width: 35px
+  }
+  #contact:hover {
+    width: 35px
+  }
+  .bb-custom-side {
+    width: 100%!important
+  }
+  .coverside {
+    display: none
+  }
+  .workspace>.content .pagearea.profile>div.bottom img.profileImage,
+  .workspace>.content .pagearea.resume>div.bottom ul li h3,
+  .workspace>.content .pagearea.resume>div.bottom ul li,
+  .workspace>.content .pagearea.contact>div.bottom iframe.map,
+  .workspace>.content .pagearea.contact>div.bottom form table tr td input[type=text],
+  .workspace>.content .pagearea.contact>div.bottom form table tr td input[type=password],
+  .workspace>.content .pagearea.contact>div.bottom form table tr td textarea,
+  .workspace>.content .pagearea.contact>div.bottom form table {
+    width: 100%
+  }
+  .ps-scrollbar-y,
+  .ps-scrollbar-x {
+    display: none
+  }
+  #page-cover>div.info {
+    bottom: 65px;
+    float: right;
+    position: absolute;
+    right: 15px
+  }
+  #page-cover>div.info>p.name {
+    font-size: 40px
+  }
+  #page-cover>div.info>p.ocupation {
+    font-size: 30px;
+    text-align: right;
+    margin-top: -15px
+  }
+  .workspace>.content .pagearea>div.bottom>table {
+    width: 100%
+  }
+  .menu-item-block,
+  .menu-item {
+    background-color: transparent!important
+  }
+  #bb-bookblock {
+    z-index: 9999!important
+  }
+}
+@media only screen and (max-width: 370px) {
+  .workspace>.menu>div>ul>li {
+    margin: 0 20px
+  }
+  .workspace>.menu>div>ul {
+    width: 325px
+  }
+}
+@media only screen and (max-width: 330px) {
+  .workspace>.menu>div>ul>li {
+    margin: 0 13px
+  }
+  .workspace>.menu>div>ul {
+    width: 255px
+  }
+  #page-cover>div.info>p.name {
+    font-size: 50px
+  }
+  #page-cover>div.info>p.ocupation {
+    font-size: 30px;
+    margin-top: -10px
+  }
+  .workspace>.content .pagearea.resume>div.bottom ul li div table tr td {
+    font-size: 12px
+  }
+  .workspace>.content .pagearea>div.top>p {
+    font-size: 16px;
+    padding-top: 5px
+  }
+}
+@media only screen and (max-width: 270px) {
+  .workspace>.content .pagearea>div.top>p {
+    font-size: 14px;
+    padding-top: 6px
+  }
+  .workspace>.content .pagearea.resume>div.bottom ul li div table tr td {
+    font-size: 11px
+  }
+  .workspace>.content .pagearea>div.bottom ul.filters>li {
+    padding: 5px 8px
+  }
+}
+p.note {
+  clear: both;
+  font-size: 70%;
+  margin-right: 35px
+}
+.bb-bookblock {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
+  -webkit-perspective: 1300px;
+  -moz-perspective: 1300px;
+  perspective: 1300px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden
+}
+.bb-page {
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform
+}
+.bb-vertical .bb-page {
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  transform-origin: left center
+}
+.bb-horizontal .bb-page {
+  width: 100%;
+  height: 50%;
+  top: 50%;
+  -webkit-transform-origin: center top;
+  -moz-transform-origin: center top;
+  transform-origin: center top
+}
+.bb-page>div,
+.bb-outer,
+.bb-content,
+.bb-inner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #fff
+}
+.bb-vertical .bb-content {
+  width: 200%
+}
+.bb-horizontal .bb-content {
+  height: 200%
+}
+.bb-page>div {
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d
+}
+.bb-page>div:not(:only-child) {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden
+}
+.bb-vertical .bb-back {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  transform: rotateY(-180deg)
+}
+.bb-horizontal .bb-back {
+  -webkit-transform: rotateX(-180deg);
+  -moz-transform: rotateX(-180deg);
+  transform: rotateX(-180deg)
+}
+.bb-outer {
+  width: 100%;
+  overflow: hidden;
+  z-index: 999
+}
+.bb-overlay,
+.bb-flipoverlay {
+  background-color: rgba(0, 0, 0, .7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0
+}
+.bb-flipoverlay {
+  background-color: rgba(0, 0, 0, .2)
+}
+.bb-bookblock.bb-vertical>div.bb-page:first-child,
+.bb-bookblock.bb-vertical>div.bb-page:first-child .bb-back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg)
+}
+.bb-bookblock.bb-horizontal>div.bb-page:first-child,
+.bb-bookblock.bb-horizontal>div.bb-page:first-child .bb-back {
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  transform: rotateX(180deg)
+}
+.bb-vertical .bb-front .bb-content {
+  left: -100%
+}
+.bb-horizontal .bb-front .bb-content {
+  top: -100%
+}
+.bb-vertical .bb-flip-next,
+.bb-vertical .bb-flip-initial {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  transform: rotateY(-180deg)
+}
+.bb-vertical .bb-flip-prev {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  transform: rotateY(0deg)
+}
+.bb-horizontal .bb-flip-next,
+.bb-horizontal .bb-flip-initial {
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  transform: rotateX(180deg)
+}
+.bb-horizontal .bb-flip-prev {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg)
+}
+.bb-vertical .bb-flip-next-end {
+  -webkit-transform: rotateY(-15deg);
+  -moz-transform: rotateY(-15deg);
+  transform: rotateY(-15deg)
+}
+.bb-vertical .bb-flip-prev-end {
+  -webkit-transform: rotateY(-165deg);
+  -moz-transform: rotateY(-165deg);
+  transform: rotateY(-165deg)
+}
+.bb-horizontal .bb-flip-next-end {
+  -webkit-transform: rotateX(15deg);
+  -moz-transform: rotateX(15deg);
+  transform: rotateX(15deg)
+}
+.bb-horizontal .bb-flip-prev-end {
+  -webkit-transform: rotateX(165deg);
+  -moz-transform: rotateX(165deg);
+  transform: rotateX(165deg)
+}
+.bb-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  background: #fff
+}
+.no-js .bb-bookblock,
+.no-js ul.bb-custom-grid li {
+  width: auto;
+  height: auto
+}
+.no-js .bb-item {
+  display: block;
+  position: relative
+}
+.bb-custom-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative
+}
+.bb-custom-wrapper .bb-bookblock {
+  width: 100%;
+  height: 100%;
+  -webkit-perspective: 2000px;
+  -moz-perspective: 2000px;
+  perspective: 2000px
+}
+.bb-custom-side {
+  width: 50%;
+  float: left;
+  height: 100%;
+  overflow: hidden
+}
+.bb-custom-firstpage h1 {
+  font-size: 2.625em;
+  line-height: 1.3;
+  margin: 0;
+  font-weight: 300
+}
+.bb-custom-firstpage h1 span {
+  display: block;
+  font-size: 60%;
+  opacity: .3;
+  padding: 0 0 .6em .1em
+}
+.bb-custom-firstpage {
+  text-align: center;
+  padding-top: 15%;
+  width: 50%;
+  float: left;
+  height: 100%
+}
+.bb-custom-wrapper h3 {
+  font-size: 1.4em;
+  font-weight: 300;
+  margin: .4em 0 1em
+}
+.bb-custom-wrapper>nav {
+  width: 100%;
+  height: 40px;
+  margin: 1em auto 0;
+  position: fixed;
+  bottom: 20px;
+  z-index: 1000;
+  text-align: center
+}
+.bb-custom-wrapper>nav a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 2px;
+  background: #1baede;
+  color: #fff;
+  font-size: 0;
+  margin: 2px
+}
+.bb-custom-wrapper>nav a:hover {
+  opacity: .6
+}
+.bb-custom-icon:before {
+  font-family: arrows;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 30px;
+  line-height: 40px;
+  display: block;
+  -webkit-font-smoothing: antialiased
+}
+.bb-custom-icon-first:before,
+.bb-custom-icon-last:before {
+  content: "\e002"
+}
+.bb-custom-icon-arrow-left:before,
+.bb-custom-icon-arrow-right:before {
+  content: "\e003"
+}
+.bb-custom-icon-arrow-left:before,
+.bb-custom-icon-first:before {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+.no-js .bb-custom-wrapper {
+  height: auto
+}
+.no-js .bb-custom-content {
+  height: 470px
+}
+@media screen and (max-width: 61.75em) {
+  .bb-custom-side {
+    font-size: 70%
+  }
+}
+@media screen and (max-width: 33em) {
+  .bb-custom-side {
+    font-size: 60%
+  }
+}
+.color,
+.ps-container .ps-scrollbar-y,
+.skill-bar>pre,
+input[type=submit] {
+  background-color: #222
+}
+.color-text,
+.level,
+.title,
+h1 {
+  color: #222!important
+}
+#page-cover .color-text,
+.coverside .color-text {
+  color: rgb(255 255 255)!important
+}
+
+.color-covertext {
+  color: rgb(40, 38, 38)!important
+}
+
+#page-cover>.socials>div:hover,
+div.submit:hover {
+  background-color: #555!important;
+  -webkit-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear
+}
+.inputerror {
+  border-color: #222!important
+}
+.menu-item {
+  background-image: url(../images/menu_sprite_white.png)
+}
+#page-cover>div.socials>div>a>div.icon {
+  background: url(../images/social_sprite_white.png) no-repeat
+}
+.menu-item-block>p {
+  color: #FFF
+}
+.ps-container .ps-scrollbar-x-rail {
+  display: none
+}
+.ps-container:hover .ps-scrollbar-x-rail,
+.ps-container.hover .ps-scrollbar-x-rail {
+  opacity: .6;
+  filter: alpha(opacity=60)
+}
+.ps-container .ps-scrollbar-x-rail:hover,
+.ps-container .ps-scrollbar-x-rail.hover {
+  background-color: #eee;
+  opacity: .9;
+  filter: alpha(opacity=90)
+}
+.ps-container .ps-scrollbar-x-rail.in-scrolling {
+  opacity: .9;
+  filter: alpha(opacity=90)
+}
+.ps-container .ps-scrollbar-y-rail {
+  position: absolute;
+  right: 3px;
+  width: 8px;
+  opacity: 100;
+  filter: alpha(opacity=100);
+  -o-transition: background-color .2s linear, opacity .2s linear;
+  -webkit-transition: background-color.2s linear, opacity .2s linear;
+  -moz-transition: background-color .2s linear, opacity .2s linear;
+  transition: background-color .2s linear, opacity .2s linear
+}
+.ps-container:hover .ps-scrollbar-y-rail,
+.ps-container.hover .ps-scrollbar-y-rail {
+  opacity: .5;
+  filter: alpha(opacity=50)
+}
+.ps-container .ps-scrollbar-y-rail:hover,
+.ps-container .ps-scrollbar-y-rail.hover {
+  opacity: .9;
+  filter: alpha(opacity=90)
+}
+.ps-container .ps-scrollbar-y-rail.in-scrolling {
+  opacity: .9;
+  filter: alpha(opacity=90)
+}
+.ps-container .ps-scrollbar-x {
+  position: absolute;
+  bottom: 0;
+  height: 8px;
+  -o-transition: background-color .2s linear;
+  -webkit-transition: background-color.2s linear;
+  -moz-transition: background-color .2s linear;
+  transition: background-color .2s linear
+}
+.ps-container.ie6 .ps-scrollbar-x {
+  font-size: 0
+}
+.ps-container .ps-scrollbar-x-rail:hover .ps-scrollbar-x,
+.ps-container .ps-scrollbar-x-rail.hover .ps-scrollbar-x {
+  background-color: #999
+}
+.ps-container .ps-scrollbar-y {
+  position: absolute;
+  right: 0;
+  width: 8px;
+  opacity: .5;
+  filter: alpha(opacity=50);
+  -o-transition: background-color .2s linear;
+  -webkit-transition: background-color.2s linear;
+  -moz-transition: background-color .2s linear;
+  transition: background-color .2s linear
+}
+.ps-container.ie .ps-scrollbar-y {
+  font-size: 0
+}
+.ps-container .ps-scrollbar-y-rail:hover .ps-scrollbar-y,
+.ps-container .ps-scrollbar-y-rail:active .ps-scrollbar-y,
+.ps-container .ps-scrollbar-y-rail.hover .ps-scrollbar-y {
+  opacity: 1;
+  filter: alpha(opacity=100)
+}
+.da-thumbs {
+  margin-top: 1em
+}
+.da-thumbs li {
+  float: left;
+  background: #fff;
+  position: relative
+}
+.da-thumbs li a,
+.da-thumbs li a img {
+  display: block;
+  position: relative
+}
+.da-thumbs li a {
+  overflow: hidden;
+  border: 0!important;
+  text-transform: none!important
+}
+.da-thumbs li a:visited,
+.da-thumbs li a:active,
+.da-thumbs li a:link {
+  border: 0!important;
+  text-transform: none!important
+}
+.da-thumbs li a div {
+  position: absolute;
+  background: #333;
+  background: rgba(75, 75, 75, .7);
+  width: 100%;
+  height: 100%
+}
+.da-thumbs li a div span {
+  display: block;
+  padding: 10px 0;
+  margin: 25px 20px 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: rgba(255, 255, 255, .9);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .1), 0 -10px 0 rgba(255, 255, 255, .3)
+}
+.da-thumbs li a div p {
+  display: block;
+  font-size: 70%;
+  margin: 0 20px 20px;
+  color: rgba(255, 255, 255, .9);
+}
